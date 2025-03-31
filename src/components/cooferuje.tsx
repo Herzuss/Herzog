@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import tekstura from "@/../public/images/COOFERUJE/tekstura.svg";
 import podkreslenie from "@/../public/images/COOFERUJE/podkreslenie.svg";
 import ikona1 from "@/../public/images/COOFERUJE/ikona1.svg";
