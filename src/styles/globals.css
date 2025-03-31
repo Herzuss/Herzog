@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@keyframes spinFast {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ruszanie {
+  50% {
+    opacity: 0;
+  }
+}
+
+.ruszanie {
+  animation: ruszanie 2s infinite;
+}
+
+.spin-fast {
+  animation: spinFast 5s linear infinite;
+}
+
+.spin-slow {
+  animation: spinFast 5s linear infinite;
+}
