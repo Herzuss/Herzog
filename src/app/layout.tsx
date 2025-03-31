@@ -5,6 +5,7 @@ import "../styles/globals.css";
 
 const DMSans = DM_Sans({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${DMSans.className} bg-neutral-950 font-geist-sans`}>
+      <body className={`${DMSans.className}bg-neutral-950`}>
         <Nav />
         {children}
       </body>
