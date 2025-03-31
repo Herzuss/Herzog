@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${DMSans.className}bg-neutral-950`}>
+      <body className={`${DMSans.className} bg-neutral-950`}>
         <Nav />
         {children}
       </body>
