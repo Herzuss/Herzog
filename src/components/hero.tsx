@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex justify-center items-center flex-col"
+      className=" relative flex justify-center items-center flex-col"
     >
       <Image
         className="absolute z-2 top-10 sm:top-13 animate-pulse scale-90 sm:scale-100"
@@ -27,22 +27,25 @@ export default function Hero() {
           <div className="absolute flex  w-[143px] h-[55px] sm:w-[175px] sm:h-[63px] justify-center items-center bg-stone-950 rounded-4xl overflow-hidden">
             <div className="absolute w-52 h-8 bg-linear-to-r from-lime-200 from-50% to-gray-950 to-50% spin-slow"></div>
           </div>
-          <Link href="/" className="z-1">
-            <button className=" w-35 h-13 sm:w-43 sm:h-15 bg-lime-500 uppercase font-bold text-xl sm:text-2xl text-zinc-200 rounded-4xl hover:bg-lime-200 hover:text-lime-500 transition-all duration-300 cursor-pointer hover:scale-105">
-              działamy!
+          <Link
+            href="https://cal.com/herzogstronyinternetowe/bezplatna-konsultacja"
+            className="z-1"
+          >
+            <button className=" w-35 h-13 sm:w-43 sm:h-15 bg-lime-500 uppercase font-bold text-lg sm:text-xl text-zinc-200 rounded-4xl hover:bg-lime-200 hover:text-lime-500 transition-all duration-300 cursor-pointer hover:scale-105">
+              konsultacja
             </button>
           </Link>
         </li>
         <li>
-          <Link href="/">
-            <button className="w-35 h-13 sm:w-43 sm:h-15 bg-stone-800 uppercase font-bold text-xl sm:text-2xl text-zinc-200 rounded-4xl hover:bg-zinc-200 hover:text-stone-800 transition-all duration-300 cursor-pointer ">
+          <Link href="#o-mnie">
+            <button className="w-35 h-13 sm:w-43 sm:h-15 bg-stone-800 uppercase font-bold text-lg sm:text-xl text-zinc-200 rounded-4xl hover:bg-zinc-200 hover:text-stone-800 transition-all duration-300 cursor-pointer ">
               o mnie
             </button>
           </Link>
         </li>
       </ul>
       <Image
-        className="scale-80 sm:scale-90 mt-15 "
+        className="scale-80 sm:scale-90 mt-15"
         src={logorzepa}
         alt="Rzepka-logo"
       />
