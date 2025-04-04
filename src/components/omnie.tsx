@@ -2,12 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import zdjecie from "@/../public/images/OMNIE/moja fotka.svg";
 import ikonki from "@/../public/images/OMNIE/ikonki.svg";
+import tlo from "@/../public/images/OMNIE/tlo.svg";
 
 export default function Omnie() {
   return (
-    <section className="max-w-screen-xl mx-auto px-44 lg:px-52" id="o-mnie">
+    <section className="max-w-screen-xl mx-auto px-4 lg:px-52" id="o-mnie">
       <div className="flex flex-col sm:flex-row mt-20 gap-10 sm:gap-52 justify-center items-center">
-        <h2 className="text-3xl text-zinc-200 uppercase font-extrabold mt-10">
+        <Image className="absolute mt-60" src={tlo} alt="Herzog" />
+        <h2 className="text-3xl text-zinc-200 uppercase font-extrabold mt-10 text-center sm:text-left">
           Nazywam się Filip <span className="text-lime-500">Herzog</span> <br />
           jestem web developerem i <br />
           designerem.
@@ -24,7 +26,11 @@ export default function Omnie() {
         uwielbiam projektować i wdrażać estetyczne, szybkie i funkcjonalne
         rozwiązania, które realnie wspierają biznes.
       </p>
-      <Image src={ikonki} alt="Ikony" className="mx-auto" />
+      <Image
+        src={ikonki}
+        alt="Ikony"
+        className="mx-auto scale-90 md:scale-100 py-4"
+      />
       <p className="uppercase text-base text-zinc-200 leading-[35px] text-center font-semibold">
         Zapraszam na bezpłatną konsultację, podczas której wspólnie stworzymy
         SZKIC stronY dopasowaną do Twoich oczekiwań.

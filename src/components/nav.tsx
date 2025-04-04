@@ -48,7 +48,7 @@ export default function Nav() {
               <Image className="w-35" src={logo} alt="Herzog" />
             </Link>
           </li>
-          <li className="relative flex justify-center items-center -ml-10">
+          <li className="relative flex justify-center items-center md:-ml-10">
             <div className="absolute flex w-[122px] h-[42px] justify-center items-center bg-stone-950 rounded-3xl overflow-hidden">
               <div className="absolute w-[150px] h-6 bg-linear-to-r from-lime-200 from-50% to-gray-950 to-50% spin-fast"></div>
             </div>
