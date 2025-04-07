@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
+// import Image from "next/image";
+// import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import hero1 from "@/../public/images/NAJNOWSZA REALIZACJA/HERO 1.svg";
 import hero2 from "@/../public/images/NAJNOWSZA REALIZACJA/HERO 2.svg";
