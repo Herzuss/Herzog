@@ -1,8 +1,8 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import Nav from "@/components/nav";
 import "../styles/globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 // import logo from "@/../public/images/NAV/logofixed2.svg";
 
 const DMSans = DM_Sans({
