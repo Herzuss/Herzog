@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import tlo from "@/../public/images/HERO/tlo.svg";
-import logorzepa from "@/../public/images/HERO/rzepkalogo.svg";
+// import logorzepa from "@/../public/images/HERO/rzepkalogo.svg";
 
 export default function Hero() {
   return (
