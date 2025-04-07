@@ -18,7 +18,7 @@ export default function Nav() {
   }
 
   return (
-    <nav className="bg-stone-950/85 border-b border-lime-800 sticky top-0 backdrop-blur-sm z-10">
+    <nav className="bg-stone-950/85 border-b border-lime-800 sticky top-0 backdrop-blur-sm z-100">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-8 h-20 flex justify-between md:justify-center items-center">
         <Link className="inline-block md:hidden" href="/">
           <Image

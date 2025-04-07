@@ -44,11 +44,11 @@ export default function Hero() {
           </Link>
         </li>
       </ul>
-      <Image
+      {/* <Image
         className="scale-80 sm:scale-90 mt-15"
         src={logorzepa}
         alt="Rzepka-logo"
-      />
+      /> */}
     </section>
   );
 }
