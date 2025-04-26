@@ -41,6 +41,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body className={`${DMSans.className} bg-neutral-950`}>
         <Nav />
         {children}
