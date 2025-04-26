@@ -1,4 +1,5 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import Nav from "@/components/nav";
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body className={`${DMSans.className} bg-neutral-950`}>
         <Nav />
         {children}
+        <Analytics />
         <SpeedInsights />
         <Footer />
       </body>
