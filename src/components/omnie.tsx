@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import zdjecie from "@/../public/images/OMNIE/moja fotka.svg";
+import zdjecie from "@/../public/images/OMNIE/moja fotka.jpg";
 import ikonki from "@/../public/images/OMNIE/ikonki.svg";
 import tlo from "@/../public/images/OMNIE/tlo.svg";
 
