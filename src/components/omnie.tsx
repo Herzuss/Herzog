@@ -14,12 +14,17 @@ export default function Omnie() {
           jestem web developerem i <br />
           designerem.
         </h2>
-        <Image src={zdjecie} alt="Filip Herzog" />
+        <Image
+          src={zdjecie}
+          alt="Filip Herzog"
+          className="w-48 h-48 rounded-full"
+        />
       </div>
       <p className="uppercase text-base text-zinc-200 mt-10 leading-[35px] text-center font-semibold">
         Tworzę unikalne, nowoczesne i estetyczne strony internetowe, łącząc
-        kreatywność z czystym, dobrze napisanym kodem. ZERO gotowców – każda
-        realizacja to indywidualny projekt, dopasowany do Twoich potrzeb. <br />
+        kreatywność z czystym, dobrze napisanym kodem.{" "}
+        <span className="text-lime-500">ZERO gotowców</span> – każda realizacja
+        to indywidualny projekt, dopasowany do Twoich potrzeb. <br />
         <br />
         Specjalizuję się w tworzeniu nowoczesnych stron GŁÓWNIE w Next.js i
         Tailwind CSS. Kodowanie to dla mnie nie tylko praca, ale też pasja.
