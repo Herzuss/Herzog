@@ -36,7 +36,7 @@ export default function Nav() {
         >
           <li>
             <Link
-              href="#oferta"
+              href="/projekty"
               className="text-sm text-zinc-200 hover:text-lime-500 uppercase font-bold transition-all duration-300 inline-block"
               onClick={handleCloseMenu}
             >
@@ -50,7 +50,7 @@ export default function Nav() {
           </li>
           <li className="relative flex justify-center items-center md:-ml-12">
             <div className="absolute flex w-[122px] h-[42px] justify-center items-center bg-lime-500 rounded-3xl overflow-hidden">
-              <div className="absolute w-[150px] h-6 bg-linear-to-r from-lime-100 from-50% to-lime-500 to-50% spin-fast"></div>
+              <div className="absolute w-[150px] h-6 bg-linear-to-r from-lime-100 from-50% to-lime-500 to-50% spin-fast blur-sm"></div>
             </div>
             <Link
               href="https://cal.com/herzogstronyinternetowe/bezplatna-konsultacja"
