@@ -12,7 +12,7 @@ export default function Cooferuje() {
         co oferuje?
       </h2>
       <div className="flex flex-wrap justify-center items-center gap-5 relative">
-        <div className="w-96 h-[28rem] border border-lime-500 min-w-80 rounded-3xl relative flex flex-col items-center overflow-hidden">
+        <div className="w-96 h-[28rem] border border-lime-500 min-w-80 rounded-4xl relative flex flex-col items-center overflow-hidden">
           <Image className="ruszanie absolute" src={tekstura} alt="Herzog" />
           <h3 className="text-3xl text-zinc-200 font-bold text-center mt-5 uppercase">
             <span className="text-lime-500">unikalny </span> design
@@ -24,7 +24,7 @@ export default function Cooferuje() {
             przyciągają uwagę i wspierają rozwój Twojego biznesu.
           </p>
         </div>
-        <div className="w-96 h-[28rem] border border-lime-500 min-w-80 rounded-3xl relative flex flex-col items-center overflow-hidden">
+        <div className="w-96 h-[28rem] border border-lime-500 min-w-80 rounded-4xl relative flex flex-col items-center overflow-hidden">
           <Image className="ruszanie absolute" src={tekstura} alt="Herzog" />
           <h3 className="text-3xl text-zinc-200 font-bold text-center mt-5 uppercase ">
             <span className="text-lime-500">Skuteczne </span> SEO
@@ -36,7 +36,7 @@ export default function Cooferuje() {
             SEO, aby wyróżniać się w Google.
           </p>
         </div>
-        <div className="w-96 h-[28rem] border border-lime-500 min-w-80 rounded-3xl relative flex flex-col items-center overflow-hidden">
+        <div className="w-96 h-[28rem] border border-lime-500 min-w-80 rounded-4xl relative flex flex-col items-center overflow-hidden">
           <Image className="ruszanie absolute" src={tekstura} alt="Herzog" />
           <h3 className="text-3xl text-zinc-200 font-bold text-center mt-5 uppercase">
             <span className="text-lime-500">WIEKSZĄ </span> SPRZEDAŻ

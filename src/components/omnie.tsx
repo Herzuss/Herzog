@@ -41,7 +41,7 @@ export default function Omnie() {
         SZKIC stronY dopasowaną do Twoich oczekiwań.
       </p>
       <div className="relative flex justify-center items-center mt-5">
-        <div className="absolute flex  w-[143px] h-[55px] sm:w-[175px] sm:h-[63px] justify-center items-center bg-lime-500 rounded-4xl overflow-hidden">
+        <div className="absolute flex  w-[142px] h-[54px] sm:w-[174px] sm:h-[62px] justify-center items-center bg-lime-500 rounded-4xl overflow-hidden">
           <div className="absolute w-52 h-8 bg-linear-to-r from-lime-100 from-50% to-lime-500 to-50% spin-slow blur-sm"></div>
         </div>
         <Link
