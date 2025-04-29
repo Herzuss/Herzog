@@ -1,6 +1,6 @@
 import Image from "next/image";
-import instalogo from "@/../public/images/FOOTER/instagram.svg";
-import fb from "@/../public/images/FOOTER/facebook.svg";
+// import instalogo from "@/../public/images/FOOTER/instagram.svg";
+// import fb from "@/../public/images/FOOTER/facebook.svg";
 import mail from "@/../public/images/FOOTER/mail.svg";
 import Link from "next/link";
 
