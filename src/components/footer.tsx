@@ -12,6 +12,7 @@ export default function Footer() {
           <Link href="/" className="group block">
             <svg
               className=" size-7 fill-zinc-200 group-hover:fill-lime-500 transition-all duration-300"
+              aria-label="Instagram"
               viewBox="0 0 30 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -31,6 +32,7 @@ export default function Footer() {
           <Link href="/" className="group block">
             <svg
               className="size-7 fill-zinc-200 group-hover:fill-lime-500 transition-all duration-300"
+              aria-label="Facebook"
               viewBox="0 0 30 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

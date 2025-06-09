@@ -5,6 +5,7 @@ import Link from "next/link";
 import logo from "@/../public/images/NAV/logofixed2.svg";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import { motion } from "motion/react";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,12 @@ export default function Nav() {
 
   return (
     <nav className="bg-stone-950/85 border-b border-lime-800 sticky top-0 backdrop-blur-sm z-100">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-8 h-20 flex justify-between md:justify-center items-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        className="max-w-screen-xl mx-auto px-4 sm:px-8 h-20 flex justify-between md:justify-center items-center"
+      >
         <Link className="inline-block md:hidden" href="/">
           <Image
             className="w-35 scale-90 sm:scale-100"
@@ -49,18 +55,18 @@ export default function Nav() {
             </Link>
           </li>
           <li className="relative flex justify-center items-center md:-ml-12">
-            <div className="absolute flex w-[122px] h-[42px] justify-center items-center bg-lime-500 rounded-3xl overflow-hidden">
-              <div className="absolute w-[150px] h-6 bg-linear-to-r from-lime-100 from-50% to-lime-500 to-50% spin-fast blur-sm"></div>
+            <div className="absolute flex w-[122px] h-[42px] justify-center items-center bg-lime-600 rounded-3xl overflow-hidden">
+              <div className="absolute w-[150px] h-6 bg-linear-to-r from-lime-50 from-50% to-lime-500 to-50% spin-fast blur-sm"></div>
             </div>
-            <Link
-              href="https://cal.com/herzogstronyinternetowe/bezplatna-konsultacja"
-              className="inline-block z-1"
+            <button
+              data-cal-namespace="bezplatna-konsultacja"
+              data-cal-link="herzogstronyinternetowe/bezplatna-konsultacja"
+              data-cal-config='{"layout":"month_view","theme":"dark"}'
               onClick={handleCloseMenu}
+              className="z-1 inline-block w-30 h-10 bg-lime-800 uppercase font-bold text-sm text-zinc-200 rounded-3xl hover:bg-lime-500 hover:text-lime-800 transition-all duration-300 cursor-pointer hover:scale-105 shadow-lg shadow-lime-300/20"
             >
-              <button className="w-30 h-10 bg-lime-800 uppercase font-bold text-sm text-zinc-200 rounded-3xl hover:bg-lime-500 hover:text-lime-800 transition-all duration-300 cursor-pointer hover:scale-105">
-                konsultacja
-              </button>
-            </Link>
+              konsultacja
+            </button>
           </li>
         </ul>
         <button className="space-y-3 md:hidden" onClick={handleToggleOpen}>
@@ -77,7 +83,7 @@ export default function Nav() {
             )}
           ></span>
         </button>
-      </div>
+      </motion.div>
     </nav>
   );
 }

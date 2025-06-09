@@ -37,3 +37,11 @@
 .spin-slow {
   animation: spinFast 5s linear infinite;
 }
+
+@theme {
+  @keyframes slider {
+    100% {
+      left: -100%;
+    }
+  }
+}

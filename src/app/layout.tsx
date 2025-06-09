@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Herzog",
     images: [
       {
-        url: "@/../public/images/NAV/logofixed2.svg",
+        url: "/favicon.png",
         width: 133,
         height: 41,
         alt: "Herzog - Profesjonalne strony internetowe",
@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" className="scroll-smooth">
+    <html lang="pl" className="scroll-smooth scroll-pt-24">
       <head>
         <link rel="icon" href="/favicon.svg" />
       </head>
