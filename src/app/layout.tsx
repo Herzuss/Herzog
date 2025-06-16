@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/favicon.png",
-        width: 133,
-        height: 41,
+        width: 1200,
+        height: 630,
         alt: "Herzog - Profesjonalne strony internetowe",
       },
     ],
