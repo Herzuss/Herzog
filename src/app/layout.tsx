@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Herzog",
     images: [
       {
-        url: "/favicon.png",
+        url: "/facebook.png",
         width: 1200,
         height: 630,
         alt: "Herzog - Profesjonalne strony internetowe",
