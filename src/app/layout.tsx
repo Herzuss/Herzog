@@ -1,10 +1,6 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
-import Nav from "@/components/nav";
-import "../styles/globals.css";
-// import logo from "@/../public/images/NAV/logofixed2.svg";
+import "./globals.css";
 
 const DMSans = DM_Sans({
   variable: "--font-geist-sans",
@@ -23,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Herzog",
     images: [
       {
-        url: "/facebook.png",
+        url: "/opengraph.png",
         width: 1200,
         height: 630,
         alt: "Herzog - Profesjonalne strony internetowe",
@@ -44,12 +40,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" />
       </head>
-      <body className={`${DMSans.className} bg-neutral-950`}>
-        <Nav />
-        {children}
-        <Analytics />
-        <SpeedInsights />
-      </body>
+      <body className={`${DMSans.className} bg-zinc-900`}>{children}</body>
     </html>
   );
 }

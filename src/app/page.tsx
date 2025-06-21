@@ -1,15 +1,17 @@
-import Hero from "@/components/hero";
-import Cooferuje from "@/components/cooferuje";
-import Omnie from "@/components/omnie";
-import Footer from "@/components/footer";
+import Nav from "./compoments/nav";
+import Hero from "./compoments/hero";
+import Offer from "./compoments/offer";
+import Projekty from "./compoments/projects";
+import Omnie from "./compoments/aboutme";
 
 export default function Home() {
   return (
     <main>
+      <Nav />
       <Hero />
-      <Cooferuje />
+      <Offer />
+      <Projekty />
       <Omnie />
-      <Footer />
     </main>
   );
 }
