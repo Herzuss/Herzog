@@ -1,9 +1,5 @@
 "use client";
 import { motion } from "motion/react";
-import Image from "next/image";
-import tlo from "@/../public/tloHero.svg";
-import { getCalApi } from "@calcom/embed-react";
-import { useEffect } from "react";
 
 export default function Hero() {
   return (

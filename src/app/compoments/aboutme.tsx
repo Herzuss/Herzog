@@ -4,7 +4,6 @@ import zdjecie from "@/../public/moja fotka.jpg";
 import ikonki from "@/../public/ikonkiTechnologi.svg";
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-import Link from "next/link";
 
 export default function Omnie() {
   useEffect(() => {
