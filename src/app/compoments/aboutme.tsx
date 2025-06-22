@@ -35,13 +35,13 @@ export default function Omnie() {
           className="w-48 h-48 rounded-full"
         />
       </div>
-      <p className="uppercase text-base text-zinc-200 mt-10 leading-[35px] text-center font-semibold">
+      <p className=" text-lg text-zinc-200 mt-10 leading-[35px] text-center font-semibold">
         Tworzę unikalne, nowoczesne i estetyczne strony internetowe, łącząc
         kreatywność z czystym, dobrze napisanym kodem.{" "}
         <span className="text-emerald-300">ZERO gotowców</span>. Każda
         realizacja to indywidualny projekt, dopasowany do Twoich potrzeb. <br />
         <br />
-        Specjalizuję się w tworzeniu nowoczesnych stron GŁÓWNIE w Next.js i
+        Specjalizuję się w tworzeniu nowoczesnych stron głównie w Next.js i
         Tailwind CSS. Kodowanie to dla mnie nie tylko praca, ale też pasja.
         uwielbiam projektować i wdrażać estetyczne, szybkie i funkcjonalne
         rozwiązania, które realnie wspierają biznes.
@@ -51,18 +51,18 @@ export default function Omnie() {
         alt="Ikony"
         className="mx-auto scale-90 md:scale-100 py-4"
       />
-      <p className="uppercase text-base text-zinc-200 leading-[35px] text-center font-semibold">
+      <p className="text-lg text-zinc-200 leading-[35px] text-center font-semibold">
         Umów się na bezpłatną konsultację, podczas której wspólnie
         zaprojektujemy wstępną wersję strony idealnie dopasowaną do Twoich
         potrzeb i celów biznesowych.
       </p>
       <div className="flex justify-center items-center mt-4">
-        <div className="bg-zinc-900 w-[290px] h-[66px] bg-conic/[from_var(--border-angle)] from-zinc-900 via-teal-50 to-zinc-900 from-80% via-90% to-100% rounded-xl flex justify-center items-center animate-rotate-border ">
+        <div className="bg-zinc-900 w-[290px] h-[66px] p-px bg-conic/[from_var(--border-angle)] from-zinc-900 via-teal-50 to-zinc-900 from-60% via-80% to-100% rounded-xl flex justify-center items-center animate-rotate-border ">
           <button
             data-cal-namespace="bezplatna-konsultacja"
             data-cal-link="herzogstronyinternetowe/bezplatna-konsultacja"
             data-cal-config='{"layout":"month_view","theme":"dark"}'
-            className=" group relative inline-flex w-72 h-16 items-center justify-center overflow-hidden rounded-xl bg-zinc-900 font-extrabold text-zinc-200 uppercase text-2xl hover:bg-zinc-800 transition-all duration-300 cursor-pointer shadow-xl shadow-emerald-100/15 border border-emerald-500
+            className=" group relative inline-flex w-72 h-16 items-center justify-center overflow-hidden rounded-xl bg-zinc-900 font-extrabold text-zinc-200 uppercase text-2xl hover:bg-zinc-800 transition-all duration-300 cursor-pointer shadow-xl shadow-emerald-100/15 border border-emerald-300/50
           "
           >
             <span>Umów rozmowe</span>
@@ -86,11 +86,6 @@ export default function Omnie() {
           </button>
         </div>
       </div>
-      <a href="mailto:herzog.web.dev@gmail.com">
-        <p className="text-zinc-200 text-base text-center mt-20 pb-10 hover:text-emerald-300 transition-all duration-300">
-          herzog.web.dev@gmail.com
-        </p>
-      </a>
     </section>
   );
 }

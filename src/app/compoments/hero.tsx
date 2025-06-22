@@ -28,13 +28,13 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="fbg-zinc-900 w-[290px] h-[66px] bg-conic/[from_var(--border-angle)] from-zinc-900 via-teal-50 to-zinc-900 from-80% via-90% to-100% rounded-xl flex justify-center items-center animate-rotate-border  mt-10"
+        className="bg-zinc-900 w-[290px] h-[66px] p-px bg-conic/[from_var(--border-angle)] from-zinc-900 via-teal-50 to-zinc-900 from-60% via-80% to-100% rounded-xl flex justify-center items-center animate-rotate-border  mt-10"
       >
         <button
           data-cal-namespace="bezplatna-konsultacja"
           data-cal-link="herzogstronyinternetowe/bezplatna-konsultacja"
           data-cal-config='{"layout":"month_view","theme":"dark"}'
-          className="group relative inline-flex w-72 h-16 items-center justify-center overflow-hidden rounded-xl bg-zinc-900 font-extrabold text-zinc-200 uppercase text-2xl hover:bg-zinc-800 transition-all duration-300 cursor-pointer shadow-xl shadow-emerald-100/15 border border-emerald-300
+          className="group relative inline-flex w-72 h-16 items-center justify-center overflow-hidden rounded-xl bg-zinc-900 font-extrabold text-zinc-200 uppercase text-2xl hover:bg-zinc-800 transition-all duration-300 cursor-pointer shadow-xl shadow-emerald-100/15 border border-emerald-300/50
           "
         >
           <span>Umów rozmowe</span>

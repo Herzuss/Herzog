@@ -3,6 +3,7 @@ import Hero from "./compoments/hero";
 import Offer from "./compoments/offer";
 import Projekty from "./compoments/projects";
 import Omnie from "./compoments/aboutme";
+import Faq from "./compoments/faq";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Offer />
       <Projekty />
       <Omnie />
+      <Faq />
     </main>
   );
 }

@@ -53,7 +53,7 @@ export default function Projekty() {
       </div>
       <AnimatePresence>
         {showPopup && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="fixed inset-0 z-50 flex items-center justify-center mt-10 sm:mt-0">
             <div
               className="absolute inset-0 bg-zinc-900/60 backdrop-blur-sm"
               onClick={() => setShowPopup(false)}
@@ -75,16 +75,16 @@ export default function Projekty() {
               <h2 className="text-2xl font-bold mb-4 text-zinc-100">
                 TRENER RZEPA
               </h2>
-              <p className="text-zinc-200 mb-2">
+              <p className="text-zinc-200 mb-2 text-xl">
                 <span className="text-red-500"> Trenera Rzepe</span> wychaczyłem
                 na instagramie, i zobaczyłem, że sprzedaję plany treningowe przy
                 stale rosnącej publice. <br /> <br />
               </p>
-              <p className="text-zinc-200">
+              <p className="text-zinc-200 text-xl">
                 Napisałem więc do niego z ofertą automatyzacji sprzedaży. <br />{" "}
                 <br />
               </p>
-              <p className="text-zinc-200 mb-4">
+              <p className="text-zinc-200 mb-4 text-xl">
                 Dzięki nowej stronie klient nie musi już pisać wiadomości na
                 Instagramie, może od razu dokonać zakupu, a plan treningowy
                 trafia do niego po jego realizacji. Strona działa 24/7, co
@@ -97,7 +97,7 @@ export default function Projekty() {
                 alt="zdjecie strony rzepy"
                 className="border border-zinc-400 rounded-xl"
               />
-              <p className="text-zinc-200">
+              <p className="text-zinc-200 text-xl">
                 <br />
                 Czerwone kolory i żółte akcenty nadają stronie dynamicznej
                 energii i zdecydowanego charakteru, jednocześnie podkreślając
@@ -108,7 +108,7 @@ export default function Projekty() {
                 alt="trener rzepka sekcja hero"
                 className="border border-zinc-400 rounded-xl"
               />
-              <p className="text-zinc-200">
+              <p className="text-zinc-200 text-xl">
                 <br />
                 Sekcja HERO zawiera mocny, motywujący nagłówek, który
                 jednocześnie zachęca do działania. Pod nim znajduje się
@@ -123,7 +123,7 @@ export default function Projekty() {
                 alt="trener rzepka oferta"
                 className="border border-zinc-400 rounded-xl"
               />
-              <p className="text-zinc-200">
+              <p className="text-zinc-200 text-xl">
                 <br />
                 Obie opcje są jasno przedstawione i łatwe do porównania.
                 Najważniejsze korzyści są wyróżnione, a duże przyciski „Kup
@@ -135,7 +135,7 @@ export default function Projekty() {
                 alt="trener rzepka oferta"
                 className="border border-zinc-400 rounded-xl"
               />
-              <p className="text-zinc-200">
+              <p className="text-zinc-200 text-xl">
                 <br />
                 Zdjęcie przedstawia okno płatności Stripe, które umożliwia
                 szybkie i wygodne dokonanie zakupu za pomocą popularnych metod,

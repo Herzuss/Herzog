@@ -52,13 +52,13 @@ export default function Nav() {
               "absolute flex flex-col justify-center top-20 left-0 w-full h-[calc(100dvh-5rem)] bg-zinc-900 z-50"
           )}
         >
-          <li className="bg-zinc-900 w-[226px] h-[46px] bg-conic/[from_var(--border-angle)] from-zinc-900 via-teal-50 to-zinc-900 from-80% via-90% to-100% rounded-xl flex justify-center items-center animate-rotate-border ">
+          <li className="bg-zinc-900 w-[226px] h-[46px] p-px bg-conic/[from_var(--border-angle)] from-zinc-900 via-teal-50 to-zinc-900 from-60% via-80% to-100% rounded-xl flex justify-center items-center animate-rotate-border ">
             <button
               data-cal-namespace="bezplatna-konsultacja"
               data-cal-link="herzogstronyinternetowe/bezplatna-konsultacja"
               data-cal-config='{"layout":"month_view","theme":"dark"}'
               onClick={handleCloseMenu}
-              className="border border-emerald-300 group relative inline-flex w-56 h-11 items-center justify-center overflow-hidden rounded-xl bg-zinc-900 font-extrabold text-zinc-200 uppercase text-lg hover:bg-zinc-800 transition-all duration-300 cursor-pointer shadow-lg shadow-emerald-100/10"
+              className="border border-emerald-300/50 group relative inline-flex w-56 h-11 items-center justify-center overflow-hidden rounded-xl bg-zinc-900 font-extrabold text-zinc-200 uppercase text-lg hover:bg-zinc-800 transition-all duration-300 cursor-pointer shadow-lg shadow-emerald-100/10"
             >
               <span>Umów rozmowe</span>
               <div className="w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
