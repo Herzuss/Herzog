@@ -25,9 +25,9 @@ const faqData = [
 ];
 
 export default function Faq() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const handleToggle = (idx) => {
+  const handleToggle = (idx: number) => {
     setOpenIndex(idx === openIndex ? null : idx);
   };
 
