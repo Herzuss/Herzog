@@ -12,8 +12,8 @@ export default function Omnie() {
       cal("ui", {
         theme: "dark",
         cssVarsPerTheme: {
-          light: { "cal-brand": "#c76802" },
-          dark: { "cal-brand": "#7CCF00" },
+          light: { "cal-brand": "#CBFBF1" },
+          dark: { "cal-brand": "#CBFBF1" },
         },
         hideEventTypeDetails: true,
         layout: "month_view",
