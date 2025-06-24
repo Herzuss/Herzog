@@ -53,7 +53,7 @@ export default function Projekty() {
       </div>
       <AnimatePresence>
         {showPopup && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center mt-10 sm:mt-5">
+          <div className="fixed inset-0 z-50 flex items-center justify-center pt-32 sm:pt-5">
             <div
               className="absolute inset-0 bg-zinc-900/60 backdrop-blur-sm"
               onClick={() => setShowPopup(false)}
