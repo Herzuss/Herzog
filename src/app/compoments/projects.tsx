@@ -53,15 +53,15 @@ export default function Projekty() {
       </div>
       <AnimatePresence>
         {showPopup && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center mt-10 sm:mt-0">
+          <div className="fixed inset-0 z-50 flex items-center justify-center mt-10 sm:mt-5">
             <div
               className="absolute inset-0 bg-zinc-900/60 backdrop-blur-sm"
               onClick={() => setShowPopup(false)}
             />
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 40 }}
+              initial={{ opacity: 0, scale: 0.7, y: 0 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 40 }}
+              exit={{ opacity: 0, scale: 0.7, y: 0 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
               className="relative z-10 bg-zinc-700 rounded-xl border border-zinc-500 p-8 max-w-lg w-full max-h-[80vh] overflow-y-auto shadow-2xl"
             >
