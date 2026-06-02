@@ -2,27 +2,8 @@
 import Image from "next/image";
 import Faqq from "@/../public/FAQ.svg";
 import { useState } from "react";
-const faqData = [
-  {
-    question: "Jak długo trwa realizacja strony?",
-    answer: "Standardowo od 7 do 21 dni, w zależności od złożoności projektu.",
-  },
-  {
-    question: "Jakie technologie wykorzystujesz przy tworzeniu stron?",
-    answer:
-      "Korzystam z Next.js do tworzenia szybkich i responsywnych stron oraz Tailwind CSS, który pozwala na szybkie i elastyczne stylowanie interfejsów.",
-  },
-  {
-    question: "Co muszę przygotować, zanim zaczniemy współpracę?",
-    answer:
-      "Przed współpracą przygotuj informacje o swojej działalności, materiały graficzne, treści oraz oczekiwania co do funkcji strony.",
-  },
-  {
-    question: "Czy oferujesz wsparcie techniczne po zakończeniu projektu?",
-    answer:
-      "Tak, oferuję wsparcie techniczne przez miesiąc po zakończeniu projektu. W tym czasie można zgłaszać ewentualne poprawki i wprowadzać niezbędne zmiany.",
-  },
-];
+import { motion, AnimatePresence } from "motion/react";
+import { faqData } from "@/lib/seo";
 
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -32,45 +13,82 @@ export default function Faq() {
   };
 
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 sm:px-8 mt-20">
-      <Image src={Faqq} alt="faq napis" />
-      <div className="flex justify-center items-center flex-col -mt-18 sm:-mt-28 md:-mt-36 border-t border-zinc-600">
+    <section id="faq" className="max-w-screen-2xl mx-auto px-4 sm:px-8 mt-24 pb-20">
+      {/* Oryginalny SVG nagłówek */}
+      <div>
+        <h2 className="sr-only">Najczęściej zadawane pytania (FAQ)</h2>
+        <Image src={Faqq} alt="Najczęściej zadawane pytania" />
+      </div>
+
+      {/* FAQ items */}
+      <div className="flex flex-col border-t border-zinc-600 -mt-25 md:-mt-30 xl:-mt-35">
         {faqData.map((item, idx) => (
-          <div
+          <motion.div
             key={idx}
-            className="w-full border-b border-zinc-600 bg-zinc-900 transition-colors"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.4, delay: idx * 0.05 }}
+            className="border-b border-zinc-600 bg-zinc-900"
           >
             <button
-              className="w-full flex items-center justify-between px-6 py-6 focus:outline-none"
+              className="w-full flex items-center justify-between px-6 py-6 focus:outline-none group"
               onClick={() => handleToggle(idx)}
+              aria-expanded={openIndex === idx}
             >
               <div className="flex items-center gap-4">
                 <span className="text-emerald-400 font-bold text-lg">
                   {idx + 1}.
                 </span>
-                <span className="text-zinc-200 text-lg text-left">
+                <span className="text-zinc-200 text-lg text-left group-hover:text-zinc-100 transition-colors duration-200">
                   {item.question}
                 </span>
               </div>
-              <span className="text-2xl text-emerald-400 transition-transform duration-200">
-                {openIndex === idx ? "−" : "+"}
-              </span>
+              <motion.span
+                animate={{ rotate: openIndex === idx ? 45 : 0 }}
+                transition={{ duration: 0.2 }}
+                className="text-2xl text-emerald-400 shrink-0 ml-4 leading-none"
+              >
+                +
+              </motion.span>
             </button>
-            <div
-              className={`px-16 pb-6 text-zinc-300 text-base transition-all duration-300 overflow-hidden ${
-                openIndex === idx ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-              }`}
-            >
-              {item.answer}
-            </div>
-          </div>
+
+            <AnimatePresence initial={false}>
+              {openIndex === idx && (
+                <motion.div
+                  key="answer"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
+                  <p className="px-16 pb-6 text-zinc-300 text-base leading-relaxed">
+                    {item.answer}
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
         ))}
       </div>
-      <a href="mailto:herzog.web.dev@gmail.com">
-        <p className="text-zinc-200 text-base text-center mt-20 pb-10 hover:text-emerald-300 transition-all duration-300">
+
+      {/* Email link */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="mt-16 text-center"
+      >
+        <p className="text-zinc-500 text-sm mb-2">Nie znalazłeś odpowiedzi?</p>
+        <a
+          href="mailto:herzog.web.dev@gmail.com"
+          className="text-zinc-200 text-base text-center hover:text-emerald-300 transition-all duration-300"
+        >
           herzog.web.dev@gmail.com
-        </p>
-      </a>
+        </a>
+      </motion.div>
     </section>
   );
 }
