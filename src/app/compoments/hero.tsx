@@ -3,9 +3,9 @@ import { motion } from "motion/react";
 import CTAButton from "./CTAButton";
 
 const trustSignals = [
-  { value: "Premium UI", label: "Nowoczesny i czysty design" },
+  { value: "Clean UI", label: "Nowoczesny i czysty design" },
   { value: "14 dni", label: "Średni czas realizacji" },
-  { value: "Bez szablonów", label: "Projekt skrojony pod Ciebie" },
+  { value: "Autorskie", label: "Projekt skrojony pod Ciebie" },
 ];
 
 interface HeroProps {
@@ -58,7 +58,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
       >
         {trustSignals.map((signal, i) => (
           <div key={i} className="flex flex-col items-center gap-1">
-            <span className="text-2xl sm:text-3xl font-extrabold text-emerald-300 tracking-tight">
+            <span className="text-lg sm:text-3xl font-extrabold text-emerald-300 tracking-tight">
               {signal.value}
             </span>
             <span className="text-zinc-500 text-xs sm:text-sm text-center tracking-wide">
